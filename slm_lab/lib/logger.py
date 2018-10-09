@@ -64,7 +64,7 @@ def to_init(spec, info_space):
 
 def set_level(lvl):
     lab_logger.setLevel(lvl)
-    os.environ['LOG_LEVEL'] = lvl
+    os.environ['LOG_LEVEL'] = str(lvl)
 
 
 def critical(msg, *args, **kwargs):
